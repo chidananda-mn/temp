@@ -5,10 +5,11 @@
     <title>Holy Grail</title>
     <style>
       .wrapper {
-        width: 20%
-        border: 10px solid green;
+        width: 50%;
+       border-style: solid;
       }
       header {
+        border-bottom: solid;
         background-color: #83CAFF;
         height: 15vh;
         display: flex;
@@ -17,11 +18,12 @@
       }
       .mainContent {
         display: flex;
+        border-bottom: solid;
       }
       article {
         flex: 1;
       }
-      article.menu {
+      div.menu {
         background-color: #CC99CC;
       }
       div.subMenu {
@@ -41,7 +43,9 @@
       .subContentData {
         padding: 10px;
       }
-      article.ad {
+      .ad {
+        padding-top: 1px;
+        height: 20vh;
         background-color: #CC99CC;
       }
       .upperHalf {
@@ -54,7 +58,7 @@
       }
       .lowerHalf {
         height: 10vh;
-	      background-color: orange;  
+	    background-color: white;  
       }
       
     </style>
@@ -66,8 +70,8 @@
       HEADER
       </header>
       <section class="mainContent">
-          <article class="menu"> 
-            <div> <div class="subMenu">MENU</div>
+          <article > 
+            <div class="menu"> <div class="subMenu">MENU</div>
             <ul> 
               <li>ITEM 1</li>
               <li>ITEM 2</li>
@@ -82,11 +86,14 @@
               <p class="subContentData"> paragragaahhah content kkkkdndjkjdkd </p>
             </div>
           </article>
-          <article class="ad"> 
-            <ul> 
-              <li>AD</li>
-              <li>AD</li>
-            </ul>
+          <article > 
+            <div class="ad"> 
+            	<ul> 
+                 <li>AD</li>
+                 <li>AD</li>
+               </ul>
+            </div>
+            
           </article>
         
       </section> 
